@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lalit Yadav Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Fixed background image on right side of page */
+      @media (min-width: 992px) {
+        .bg-image-right-fixed {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: auto;
+          z-index: 0;
+          pointer-events: none;
+          background: none;
+        }
+        .bg-image-right-fixed img {
+          height: 100vh;
+          width: auto;
+          display: block;
+        }
+        .hero,
+        #home-section {
+          position: relative;
+          z-index: 1;
+        }
+      }
+      @media (max-width: 991px) {
+        .bg-image-right-fixed { display: none; }
+      }
+      .img-about img {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .skills-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .skills-box {
+        padding: 8px 18px;
+        border-radius: 25px;
+        background: #b4b107;
+        color: #000000;
+        display: inline-block;
+        font-size: 1.04em;
+        margin-bottom: 6px;
+        border: 1px solid #244066;
+        letter-spacing: .2px;
+      }
+      /* Education blocks equal size */
+      .edu-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+      }
+      .edu-column {
+        flex: 1 1 340px;
+        max-width: 420px;
+        min-width: 285px;
+        display: flex;
+      }
+      .view-cv-gap {
+        margin-bottom: 30px;
+      }
+      @media(max-width:900px) {
+        .edu-row { flex-direction: column; gap:20px; }
+        .edu-column { max-width: 96vw;}
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Lalit Yadav</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home/Hero Section -->
+    <!-- Home/Hero Section -->
+<section id="home-section" class="hero">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+          <!-- Text block on left -->
+          <div class="col-md-7 d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <div class="text">
+              <span class="subheading">Hello 🙂 !</span>
+              <h1 class="mb-4 mt-3">I'm <span>Lalit Yadav</span></h1>
+              <span id="typing-animation">Aspiring Data Analyst</span>
+              <br /><br />
+              <p>
+                <a href="http://www.linkedin.com/in/lalit-yad7290" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                <a href="https://github.com/yadavlalit7290" class="btn btn-white btn-outline-white py-3 px-4">Github</a>
+              </p>
+            </div>
+          </div>
+          <!-- Image block on right -->
+          <div class="col-md-5 d-flex align-items-center justify-content-end">
+            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png); min-height: 500px; background-size: contain; background-repeat: no-repeat; background-position: center;">
+              <!-- Empty because image is background -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <!-- No background for about-me.png -->
+                        <img src="images/latest1.jpg"
+                          class="img-fluid rounded b-shadow-a"
+                          alt="Lalit Yadav" />
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Lalit Yadav</span></p>
+                        <p><span class="title-s">Experience: </span> <span>1+ Year (Invoice Processing at Accenture)</span></p>
+                        <p><span class="title-s">Location: </span> <span>Delhi, India</span></p>
+                        <p><span class="title-s">Seeking Opportunities in: </span>
+                          <span>Data Analysis, Business Analysis</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Skills shown as boxes -->
+                  <section class="skills">
+                    <h2>Skills</h2>
+                    <div class="skills-boxes">
+                      <div class="skills-box">SQL</div>
+                      <div class="skills-box">Python</div>
+                      <div class="skills-box">MS-Excel</div>
+                      <div class="skills-box">Power BI</div>
+                      <div class="skills-box">Data Visualization</div>
+                      <div class="skills-box">Data Analysis</div>
+                      <div class="skills-box">Statistics</div>
+                      <div class="skills-box">Teamwork &amp; Collaboration</div>
+                      <div class="skills-box">Communication</div>
+                      <div class="skills-box">Problem Solving</div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+                  <p>
+                    Commerce graduate with hands-on experience in invoice processing at Accenture, specializing in transforming raw data into clear, actionable business insights. Proficient in Python, SQL, Excel, and Power BI. Driven by curiosity and a passion for supporting better decision-making through analytics and collaboration.
+                  </p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Profile:</span> <span>Business Analytics &amp; Data Analysis</span></li>
+                    <!-- <li class="d-flex"><span>Domain:</span><span>Finance (Procure to Pay), Sales Analytics</span></li> -->
+                    <li class="d-flex"><span>Education:</span> <span>Bachelor of Commerce (Honours), University of Delhi</span></li>
+                    <li class="d-flex"><span>Languages:</span><span>English, Hindi</span></li>
+                    <li class="d-flex"><span>Key Tools:</span> <span>Power BI, Excel, Python, SQL, pandas, seaborn</span></li>
+                    <li class="d-flex"><span>Soft Skills:</span><span>Teamwork, Communication, Problem Solving</span></li>
+                    <li class="d-flex"><span>Certifications:</span><span>Power BI (2022), Data Analytics (2024)</span></li>
+                    <!-- <li class="d-flex"><span>Interest:</span><span>Continuous Learning, Data Visualization</span></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section -->
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>
+              Commerce graduate with 1+ year experience in invoice processing. Skilled in delivering insights using Python, SQL, Power BI, and Microsoft Excel.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">June 2024 - Present  (1+ year)</span>
+              <h2>Procure to Pay Associate</h2>
+              <span class="position">Accenture, Gurugram</span>
+              <ul class="mt-4">
+                <li>Processed invoices with accuracy and ensured timely payments.</li>
+                <li>Collaborated with teams to resolve invoice discrepancies and streamline processes through effective use of Excel formulas.</li>
+                <!-- <li>Collaborated with teams to resolve invoice discrepancies and streamline processes.</li> -->
+                <li>Consistently met deadlines to support smooth financial operations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br />
+        <div class="row edu-row">
+          <div class="edu-column">
+            <div class="resume-wrap ftco-animate" style="width:100%">
+              <span class="date">2020-2023</span>
+              <h2>Bachelor of Commerce (Honours)</h2>
+              <span class="position">University of Delhi</span>
+            </div>
+          </div>
+          <div class="edu-column">
+            <div class="resume-wrap ftco-animate" style="width:100%">
+              <span class="date">2019-2020</span>
+              <h2>Higher Secondary School (CBSE)</h2>
+              <!-- <span class="position">[Your School Name]</span> -->
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Highlights of my work using SQL, Python, and Power BI to solve real business problems.</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/yadavlalit7290/Vendor-Performance"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/vendor_performance.png')"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a href="https://github.com/yadavlalit7290/Vendor-Performance">Vendor Performance Data Analysis</a>
+                </h3>
+                <p>
+                  Automated data pipelines and built interactive dashboards to track vendor contributions, identify supply chain risks, and recommend cost-saving strategies. Used Python, SQL, and Power BI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/yadavlalit7290/US_Sales_Analysis"
+                class="block-20 zoom-effect"
+                style="background-image: url('images/us_sales.png')"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a href="https://github.com/yadavlalit7290/US_Sales_Analysis">US Sales Analytics</a>
+                </h3>
+                <p>
+                  Analyzed national sales orders to uncover revenue trends, build customer segments, and recommend region-specific marketing. Visualized insights and cycles in Power BI and Python.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-2 pb-2">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+        <div class="row d-flex contact-info mb-2">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Delhi, India</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel:+917082731490">+91 7082731490</a></p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:yadavlalit7290@gmail.com">yadavlalit7290@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center view-cv-gap">
+          <div class="col-md-6 text-center ftco-animate">
+            <a href="https://drive.google.com/file/d/1lEH_Hq5cfQ8wYByZDc3hf3G-PObilm2a/view?usp=sharing" class="btn btn-primary py-3 px-5" target="_blank">View CV</a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+            <li class="ftco-animate normal-txt">Find me on </li>
+            <li class="ftco-animate">
+              <a href="https://www.linkedin.com/in/lalit-yad7290/"><span class="icon-linkedin"></span></a>
+            </li>
+            <li class="ftco-animate">
+              <a href="https://github.com/yadavlalit7290"><span class="icon-github"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script>
+              All rights reserved | This portfolio is made by Lalit Yadav
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+      </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
